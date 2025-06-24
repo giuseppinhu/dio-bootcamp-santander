@@ -3,10 +3,16 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
+    color: #fff;
 }
 
 body {
     background-color: black;
+}
+
+section {
+    border-top: 1px solid #33A8DB;
+    padding: 72px 0 144px 0;
 }
 
 .banner {
@@ -15,8 +21,8 @@ body {
     justify-content: center;
     align-items: center;
     background: center / contain no-repeat linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('assets/images/banner.png') ; 
-    border-bottom: 2px solid #33A8DB;
 }
+
 
 .banner-content {
     display: flex;
@@ -67,7 +73,6 @@ body {
 
 #course-content {
     text-align: center;
-    margin: 64px 0 144px 0;
 
     .title {
        text-transform: uppercase;
@@ -78,6 +83,7 @@ body {
     }
 
     .text {
+
         color: #fff;
         max-width: 60%;
         margin: auto;
@@ -85,11 +91,12 @@ body {
     }
 
     .modules-list {
-         color: #fff;
-         max-width: 40%;
+
+        color: #fff;
+         max-width: 600px;
          margin: auto;
 
-         .module {
+        .module {
             margin-bottom: 24px;
             background-color: #252525;
             padding: 16px 112px;
@@ -109,11 +116,50 @@ body {
 #transform-world {
     color: #fff;
     text-transform: lowercase;
+    background-color: red;
+    height: 500px;
+    padding: 192px;
+    background: center / cover fixed url(assets/images/woman-code.png);
 
     p {
-        max-height: 32px;
-        font-size: 32px;
+        max-width: 244px;
+        font-size: 40px;
         text-shadow: 3px 2px #33A8DB;
         font-weight: 900;
+    }
+}
+
+#professional-challenges {
+    text-align: center;
+    padding-top: 72px;
+
+    .title {
+        font-size: 32px;
+        color: #33A8DB;
+        text-transform: uppercase;
+    }
+
+    .text {
+        margin: auto;
+        max-width: 700px;
+        font-size: 16px;
+    }
+}
+
+.footer {
+    height: 176px;
+    text-align: center;
+    border-top: 1px solid #33A8DB;
+    padding-top: 64px;
+    background: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+
+    img { 
+        margin-bottom: 8px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #33A8DB;
+        cursor: pointer;
     }
 }
